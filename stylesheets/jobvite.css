@@ -1,0 +1,41 @@
+@font-face {
+    font-family: Conduit;
+    src: url('http://content.backcountry.com/promo_upload/corpsite/fonts/conduititcstd-extrabold-webfont.eot');
+    src: url('http://content.backcountry.com/promo_upload/corpsite/fonts/conduititcstd-extrabold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('http://content.backcountry.com/promo_upload/corpsite/fonts/conduititcstd-extrabold-webfont.woff') format('woff'),
+         url('http://content.backcountry.com/promo_upload/corpsite/fonts/conduititcstd-extrabold-webfont.ttf') format('truetype'),
+         url('http://content.backcountry.com/promo_upload/corpsite/fonts/conduititcstd-extrabold-webfont.svg#conduititcstdextrabold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: Conduit;
+    src: url('http://content.backcountry.com/promo_upload/corpsite/fonts/conduititcstd-regular-webfont.eot');
+    src: url('http://content.backcountry.com/promo_upload/corpsite/fonts/conduititcstd-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('http://content.backcountry.com/promo_upload/corpsite/fonts/conduititcstd-regular-webfont.woff') format('woff'),
+         url('http://content.backcountry.com/promo_upload/corpsite/fonts/conduititcstd-regular-webfont.ttf') format('truetype'),
+         url('http://content.backcountry.com/promo_upload/corpsite/fonts/conduititcstd-regular-webfont.svg#conduititcstdregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+html, body { color:#222222; font-family:Conduit,Helvetica,Arial,sans-serif !important; font-size:18px; line-height:1.5; }
+
+body, .jvcontainer { background: #efefef; }
+.jvcontainer { margin:0 auto; max-width: 1000px; }
+.joblist li { background: rgba(255, 255, 255, 0.6); padding: 10px; border-bottom: 1px solid #c2c2c2; font-size: 14px; }
+.joblist li:last-child { border-bottom: none; }
+.jvcontent a { color: #3399cc; font-size:18px; transition:all .5s ease-in-out; -webkit-transition:all .5s ease-in-out; -moz-transition:all .5s ease-in-out; -o-transition:all .5s ease-in-out; }
+.jvcontent a:hover { color:#222222; text-decoration:none; }
+.jgcontainer h2 { color:#222222; text-transform: uppercase; }
+.jvcontent h3 { font-size: 24px; text-transform: uppercase; color: #222222; }
+.joblocation { font-size:18px; }
+
+@media (max-width: 800px) {
+  html, body,.jvcontent a, .joblocation { font-size:15px; }
+  .jvcontent h3 { font-size: 18px; text-transform: uppercase; color: #222222; }
+  .joblocation { float:none; margin-left:10px; }
+}

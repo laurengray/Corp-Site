@@ -1,0 +1,6 @@
+#big-video-wrap {
+  background-image:url('../img/video-bg.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size:cover;
+}

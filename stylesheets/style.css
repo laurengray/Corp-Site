@@ -1,0 +1,1596 @@
+/*-- Basic Page Styling --*/
+/* line 5, ../sass/style.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 11, ../sass/style.scss */
+html, body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 17, ../sass/style.scss */
+body {
+  border-top: none;
+}
+
+/* line 21, ../sass/style.scss */
+body.active-player {
+  overflow: hidden;
+}
+
+/* line 25, ../sass/style.scss */
+.show-600 {
+  display: none;
+}
+
+@font-face {
+  font-family: Conduit;
+  src: url("../fonts/conduititcstd-extrabold-webfont.eot");
+  src: url("../fonts/conduititcstd-extrabold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/conduititcstd-extrabold-webfont.woff") format("woff"), url("../fonts/conduititcstd-extrabold-webfont.ttf") format("truetype"), url("../fonts/conduititcstd-extrabold-webfont.svg#conduititcstdextrabold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Conduit;
+  src: url("../fonts/conduititcstd-regular-webfont.eot");
+  src: url("../fonts/conduititcstd-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/conduititcstd-regular-webfont.woff") format("woff"), url("../fonts/conduititcstd-regular-webfont.ttf") format("truetype"), url("../fonts/conduititcstd-regular-webfont.svg#conduititcstdregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 25, ../sass/_type.scss */
+* {
+  -webkit-font-smoothing: antialiased;
+}
+
+/* line 29, ../sass/_type.scss */
+body {
+  color: #222222;
+  font-family: Conduit, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+/* line 46, ../sass/_type.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+.header-0,
+.header-1,
+.header-2,
+.header-3,
+.header-4,
+.header-5 {
+  text-transform: uppercase;
+  line-height: 1.5;
+}
+
+/* line 51, ../sass/_type.scss */
+.pre-header {
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+/* line 56, ../sass/_type.scss */
+.pre-header + h2 {
+  margin: 0;
+}
+
+/* line 60, ../sass/_type.scss */
+.header-0 {
+  font-size: 100px;
+  line-height: 90px;
+}
+
+/* line 66, ../sass/_type.scss */
+h1,
+.header-1 {
+  font-size: 44px;
+  margin: 0;
+}
+
+/* line 72, ../sass/_type.scss */
+h2,
+.header-2 {
+  font-size: 32px;
+}
+
+/* line 77, ../sass/_type.scss */
+h3,
+.header-3 {
+  font-size: 24px;
+}
+
+/* line 81, ../sass/_type.scss */
+h2 + p, h3 + p {
+  margin-top: 0;
+}
+
+/* line 86, ../sass/_type.scss */
+h4,
+.header-4 {
+  font-size: 24px;
+  text-transform: none;
+  line-height: 1.35;
+}
+
+/* line 92, ../sass/_type.scss */
+.mouse {
+  font-size: 16px;
+  color: #666666;
+  line-height: 18px;
+}
+
+/* line 98, ../sass/_type.scss */
+a {
+  color: #3399cc;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+/* line 103, ../sass/_type.scss */
+a img {
+  border: none;
+}
+
+/* line 108, ../sass/_type.scss */
+a:hover {
+  color: #222222;
+}
+
+/* line 112, ../sass/_type.scss */
+a.white {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* line 117, ../sass/_type.scss */
+a.white:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* line 122, ../sass/_type.scss */
+hr {
+  border: 0;
+  border-top: 1px solid #efefef;
+  display: block;
+  float: left;
+  height: 0;
+  margin: 0;
+  position: relative;
+  padding: 0;
+  width: 100%;
+}
+
+/* line 134, ../sass/_type.scss */
+hr.light {
+  border-top: 1px solid #c2c2c2;
+}
+
+/* line 1, ../sass/_grid.scss */
+section {
+  display: block;
+  float: left;
+  min-height: 100%;
+  position: relative;
+  width: 100%;
+}
+
+/* line 9, ../sass/_grid.scss */
+.container {
+  margin: 140px auto 0;
+  width: 75%;
+  z-index: 10;
+}
+
+/* line 15, ../sass/_grid.scss */
+.column-quarter {
+  float: left;
+  margin: 1%;
+  position: relative;
+  width: 23.5%;
+}
+
+/* line 22, ../sass/_grid.scss */
+.column-third {
+  float: left;
+  padding: 20px;
+  position: relative;
+  width: 33%;
+}
+
+/* line 29, ../sass/_grid.scss */
+.column-half {
+  float: left;
+  padding: 30px;
+  position: relative;
+  width: 50%;
+}
+
+/* line 36, ../sass/_grid.scss */
+.alpha {
+  padding-left: 0;
+}
+
+/* line 40, ../sass/_grid.scss */
+.column-third.alpha {
+  padding-right: 40px;
+}
+
+/* line 44, ../sass/_grid.scss */
+.column-quarter.alpha {
+  margin-left: 0;
+}
+
+/* line 48, ../sass/_grid.scss */
+.omega {
+  padding-right: 0;
+}
+
+/* line 52, ../sass/_grid.scss */
+.column-third.omega {
+  padding-left: 40px;
+}
+
+/* line 56, ../sass/_grid.scss */
+.column-quarter.omega {
+  margin-right: 0;
+}
+
+/* line 60, ../sass/_grid.scss */
+hr {
+  border: none;
+  border-top: 1px solid #c2c2c2;
+  display: block;
+  float: left;
+  margin: 60px 0;
+  position: relative;
+  height: 0;
+  width: 100%;
+}
+
+/* line 71, ../sass/_grid.scss */
+p.two-column {
+  width: 75%;
+}
+
+/* line 75, ../sass/_grid.scss */
+.spacer {
+  height: 80%;
+  min-height: 80%;
+}
+
+/* line 80, ../sass/_grid.scss */
+.clear {
+  clear: both;
+}
+
+/* line 1, ../sass/_header.scss */
+html {
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+}
+
+/* line 5, ../sass/_header.scss */
+html.open {
+  margin-top: 244px;
+  overflow: hidden;
+}
+
+/* line 10, ../sass/_header.scss */
+body > ul.nav {
+  display: none;
+}
+
+/* line 14, ../sass/_header.scss */
+header {
+  background: #222222;
+  display: block;
+  float: left;
+  height: 60px;
+  left: 0;
+  position: fixed;
+  top: -60px;
+  width: 100%;
+  z-index: 999;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+}
+/* line 26, ../sass/_header.scss */
+header .container {
+  margin-top: 0;
+}
+
+/* line 31, ../sass/_header.scss */
+header.active {
+  top: 0;
+}
+
+/* line 35, ../sass/_header.scss */
+ul.nav {
+  float: right;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+/* line 42, ../sass/_header.scss */
+ul.nav li {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+/* line 47, ../sass/_header.scss */
+ul.nav li a {
+  color: #fff;
+  font-weight: bold;
+  line-height: 63px;
+  margin: 0 30px;
+  opacity: .6;
+  text-transform: uppercase;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+/* line 60, ../sass/_header.scss */
+ul.nav li a:hover {
+  opacity: 1;
+}
+/* line 65, ../sass/_header.scss */
+ul.nav li.active a {
+  opacity: 1;
+}
+/* line 69, ../sass/_header.scss */
+ul.nav li:last-child a {
+  margin-right: 0;
+}
+
+/* line 74, ../sass/_header.scss */
+.mobile-menu {
+  background: url("http://content.backcountry.com/promo_upload/corpsite/img/ico-32-menu-white@2x.png") center center no-repeat;
+  background-size: 24px 24px;
+  display: none;
+  float: right;
+  height: 32px;
+  position: relative;
+  width: 32px;
+}
+
+/* line 84, ../sass/_header.scss */
+.header-start .mobile-menu {
+  margin-top: 56px;
+}
+
+/* line 88, ../sass/_header.scss */
+header .mobile-menu {
+  margin-top: 14px;
+}
+
+/* line 92, ../sass/_header.scss */
+header.open {
+  top: 244px;
+}
+
+/* line 1, ../sass/_intro.scss */
+h1 + p {
+  font-size: 24px;
+  line-height: 32px;
+  margin-top: 0;
+  width: 460px;
+}
+
+/* line 8, ../sass/_intro.scss */
+#big-video-wrap {
+  background: #000;
+  background-size: cover;
+  height: 100%;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  z-index: 0;
+}
+
+/* line 18, ../sass/_intro.scss */
+.vjs-control-bar {
+  display: none;
+}
+
+/* line 22, ../sass/_intro.scss */
+a.goat {
+  display: block;
+  float: left;
+  margin-top: 15px;
+  position: relative;
+  width: 30px;
+}
+/* line 29, ../sass/_intro.scss */
+a.goat img {
+  width: 100%;
+}
+
+/* line 36, ../sass/_intro.scss */
+.intro .container {
+  color: #fff;
+  margin-top: 220px;
+  position: relative;
+  z-index: 6;
+}
+/* line 43, ../sass/_intro.scss */
+.intro .header-start {
+  display: block;
+  float: left;
+  height: 140px;
+  margin-bottom: -140px;
+  position: relative;
+  width: 100%;
+  z-index: 999;
+}
+/* line 53, ../sass/_intro.scss */
+.intro .header-start .container {
+  margin-top: 0;
+}
+/* line 57, ../sass/_intro.scss */
+.intro .header-start ul.nav li a {
+  line-height: 147px;
+}
+/* line 61, ../sass/_intro.scss */
+.intro a.logo {
+  display: block;
+  float: left;
+  margin-top: 40px;
+  position: relative;
+  width: 200px;
+}
+/* line 68, ../sass/_intro.scss */
+.intro a.logo img {
+  width: 100%;
+}
+/* line 73, ../sass/_intro.scss */
+.intro .trigger {
+  background: rgba(34, 34, 34, 0.6) url("http://content.backcountry.com/promo_upload/corpsite/img/ico-play-white-32.png") center center no-repeat;
+  -webkit-border-radius: 24px;
+  -moz-border-radius: 24px;
+  -ms-border-radius: 24px;
+  -o-border-radius: 24px;
+  border-radius: 24px;
+  content: '';
+  cursor: pointer;
+  display: block;
+  height: 100px;
+  margin-top: 20px;
+  position: relative;
+  width: 100px;
+  z-index: 999;
+  text-indent: -9999px;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -moz-transition: background-color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+/* line 88, ../sass/_intro.scss */
+.intro .trigger:hover {
+  background-color: #222222;
+}
+
+/* line 93, ../sass/_intro.scss */
+.intro:before {
+  background: rgba(34, 34, 34, 0.3);
+  content: '';
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+/* line 1, ../sass/_why.scss */
+.why {
+  height: 100%;
+  z-index: 1;
+}
+/* line 5, ../sass/_why.scss */
+.why .flex-viewport {
+  height: 100%;
+}
+/* line 9, ../sass/_why.scss */
+.why .slides {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+/* line 15, ../sass/_why.scss */
+.why .slide {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  z-index: 999;
+}
+/* line 27, ../sass/_why.scss */
+.why .slides:before {
+  background: rgba(34, 34, 34, 0.3);
+  content: '';
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+/* line 38, ../sass/_why.scss */
+.why .container {
+  color: #fff;
+  position: relative;
+  z-index: 6;
+}
+
+/* line 45, ../sass/_why.scss */
+.flex-control-nav {
+  bottom: 60px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+/* line 54, ../sass/_why.scss */
+.flex-control-nav li {
+  display: inline-block;
+  cursor: pointer;
+}
+/* line 58, ../sass/_why.scss */
+.flex-control-nav li a {
+  background: #222;
+  color: #fff;
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  height: 40px;
+  line-height: 36px;
+  margin: 0 5px;
+  padding-top: 4px;
+  width: 40px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+/* line 75, ../sass/_why.scss */
+.flex-control-nav li a.flex-active {
+  background: #fff;
+  color: #222;
+}
+
+/* line 82, ../sass/_why.scss */
+.flex-direction-nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+}
+/* line 91, ../sass/_why.scss */
+.flex-direction-nav li .flex-prev,
+.flex-direction-nav li .flex-next {
+  background-color: #222;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 82px;
+  margin-top: -41px;
+  opacity: .6;
+  position: absolute;
+  text-indent: -9999px;
+  width: 82px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+/* line 107, ../sass/_why.scss */
+.flex-direction-nav li .flex-prev {
+  background-image: url("http://content.backcountry.com/promo_upload/corpsite/img/ico-42-arrow-left-white.png");
+  left: 0;
+}
+/* line 112, ../sass/_why.scss */
+.flex-direction-nav li .flex-next {
+  background-image: url("http://content.backcountry.com/promo_upload/corpsite/img/ico-42-arrow-right-white.png");
+  right: 0;
+}
+/* line 118, ../sass/_why.scss */
+.flex-direction-nav li .flex-prev:hover,
+.flex-direction-nav li .flex-next:hover {
+  opacity: 1;
+}
+
+/* line 1, ../sass/_where.scss */
+.where {
+  background: #efefef;
+  padding-bottom: 80px;
+  z-index: 1;
+}
+/* line 6, ../sass/_where.scss */
+.where .slideshow-2 {
+  margin-top: 60px;
+  position: relative;
+}
+/* line 11, ../sass/_where.scss */
+.where .slides {
+  margin: 0;
+  padding: 0;
+}
+/* line 15, ../sass/_where.scss */
+.where .slides .slide {
+  line-height: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+}
+/* line 23, ../sass/_where.scss */
+.where .slides .slide img {
+  width: 100%;
+}
+/* line 27, ../sass/_where.scss */
+.where .slides .slide .caption {
+  background: rgba(34, 34, 34, 0.8);
+  bottom: 0;
+  color: white;
+  left: 0;
+  line-height: 1.5;
+  padding: 5px 10px;
+  position: absolute;
+  width: 100%;
+}
+/* line 43, ../sass/_where.scss */
+.where .flex-direction-nav li .flex-prev,
+.where .flex-direction-nav li .flex-next {
+  background-color: #222222;
+  opacity: 1;
+}
+/* line 48, ../sass/_where.scss */
+.where .flex-direction-nav li .flex-prev {
+  left: -41px;
+}
+/* line 52, ../sass/_where.scss */
+.where .flex-direction-nav li .flex-next {
+  right: -41px;
+}
+/* line 58, ../sass/_where.scss */
+.where .column-half .pre-header,
+.where .column-third .pre-header {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+/* line 64, ../sass/_where.scss */
+.where .column-half img,
+.where .column-third img {
+  margin-top: 20px;
+  width: 100%;
+}
+/* line 69, ../sass/_where.scss */
+.where h3 {
+  margin: 0;
+}
+
+/* line 1, ../sass/_who.scss */
+.who {
+  background: #efefef;
+  z-index: 1;
+}
+/* line 5, ../sass/_who.scss */
+.who img {
+  width: 75%;
+}
+/* line 9, ../sass/_who.scss */
+.who .flash {
+  margin-top: 40px;
+}
+/* line 12, ../sass/_who.scss */
+.who .flash img {
+  width: 100%;
+}
+
+/* line 18, ../sass/_who.scss */
+.exec {
+  cursor: pointer;
+  margin-bottom: 40px;
+}
+
+/* line 23, ../sass/_who.scss */
+.exec-pic {
+  background-color: #fff;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  height: 200px;
+  width: 100%;
+}
+
+/* line 33, ../sass/_who.scss */
+.exec-pic + h3 {
+  margin-bottom: 0;
+  line-height: 1;
+}
+
+/* line 38, ../sass/_who.scss */
+.player-wrapper {
+  background: rgba(34, 34, 34, 0.8);
+  display: none;
+  height: 100%;
+  opacity: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+}
+/* line 47, ../sass/_who.scss */
+.player-wrapper .video {
+  display: none;
+  left: 50%;
+  margin: 0 10% 0;
+  position: relative;
+  top: 50%;
+  width: 80%;
+}
+
+/* line 57, ../sass/_who.scss */
+.player-wrapper.video {
+  background: #222222;
+}
+
+/* line 61, ../sass/_who.scss */
+.player {
+  overflow: hidden;
+}
+
+/* line 65, ../sass/_who.scss */
+.exec-bio {
+  background: #efefef;
+  display: none;
+  height: 90%;
+  max-height: 640px;
+  position: absolute;
+  left: 50%;
+  margin: -320px 0 0 -500px;
+  top: 50%;
+  width: 90%;
+  max-width: 1000px;
+  -webkit-transform: scale(0, 0);
+  -moz-transform: scale(0, 0);
+  -ms-transform: scale(0, 0);
+  -o-transform: scale(0, 0);
+  transform: scale(0, 0);
+  -webkit-transform-origin: 50% 50% 50% 50%;
+  -moz-transform-origin: 50% 50% 50% 50%;
+  -ms-transform-origin: 50% 50% 50% 50%;
+  -o-transform-origin: 50% 50% 50% 50%;
+  transform-origin: 50% 50% 50% 50%;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+/* line 81, ../sass/_who.scss */
+.exec-bio .close {
+  top: 0 !important;
+}
+
+/* line 85, ../sass/_who.scss */
+.exec-gear-pic {
+  background: #fff top center no-repeat;
+  background-size: cover;
+  display: inline-block;
+  float: left;
+  height: 100%;
+  position: relative;
+  width: 30%;
+}
+
+/* line 95, ../sass/_who.scss */
+.bio-head {
+  background: #222222;
+  color: #fff;
+  float: left;
+  padding: 20px 40px 40px;
+  position: relative;
+  width: 70%;
+}
+
+/* line 105, ../sass/_who.scss */
+.bio-body,
+.gear-story {
+  float: left;
+  padding: 20px 40px 40px;
+  position: relative;
+  width: 70%;
+}
+
+/* line 112, ../sass/_who.scss */
+.bio-head h2 {
+  line-height: .75;
+  margin-bottom: 0;
+}
+
+/* line 117, ../sass/_who.scss */
+.bio-body {
+  float: left;
+  height: 435px;
+  margin: 30px 0 40px;
+  overflow: scroll;
+  padding: 0 20px 0 40px;
+  position: relative;
+  width: 45%;
+}
+
+/* line 127, ../sass/_who.scss */
+.bio-body p:last-child {
+  margin-bottom: 40px;
+}
+
+/* line 131, ../sass/_who.scss */
+.bio-gradient {
+  background: -moz-linear-gradient(top, rgba(239, 239, 239, 0) 0%, #efefef 50%, #efefef 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(239, 239, 239, 0)), color-stop(50%, #efefef), color-stop(100%, #efefef));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, rgba(239, 239, 239, 0) 0%, #efefef 50%, #efefef 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, rgba(239, 239, 239, 0) 0%, #efefef 50%, #efefef 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, rgba(239, 239, 239, 0) 0%, #efefef 50%, #efefef 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, rgba(239, 239, 239, 0) 0%, #efefef 50%, #efefef 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00efefef', endColorstr='#efefef',GradientType=0 );
+  /* IE6-9 */
+  bottom: 0;
+  height: 100px;
+  left: 30%;
+  position: absolute;
+  width: 45%;
+}
+
+/* line 146, ../sass/_who.scss */
+.gear-story {
+  float: left;
+  font-size: 15px;
+  line-height: 18px;
+  padding: 40px;
+  position: relative;
+  width: 25%;
+}
+
+/* line 155, ../sass/_who.scss */
+.gear-story h5 {
+  font-size: 16px;
+  margin: 10px 0 0;
+}
+
+/* line 160, ../sass/_who.scss */
+.close {
+  background: url("http://content.backcountry.com/promo_upload/corpsite/img/ico-18-x-white.png") center center no-repeat;
+  cursor: pointer;
+  display: block;
+  height: 38px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 38px;
+}
+
+/* line 171, ../sass/_who.scss */
+.video .close {
+  top: -38px;
+}
+
+/* line 175, ../sass/_who.scss */
+.masonry {
+  display: block;
+  margin-top: 120px;
+  width: 100%;
+}
+/* line 181, ../sass/_who.scss */
+.masonry .item,
+.masonry .grid-sizer {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  float: left;
+  height: 90px;
+  width: 12.5%;
+}
+/* line 190, ../sass/_who.scss */
+.masonry .item.w2 {
+  width: 25%;
+}
+/* line 194, ../sass/_who.scss */
+.masonry .item.w3 {
+  width: 37.5%;
+}
+/* line 198, ../sass/_who.scss */
+.masonry .item.h2 {
+  height: 180px;
+}
+/* line 202, ../sass/_who.scss */
+.masonry .item.h3 {
+  height: 270px;
+}
+/* line 206, ../sass/_who.scss */
+.masonry .item.h4 {
+  height: 360px;
+}
+/* line 210, ../sass/_who.scss */
+.masonry .item.h5 {
+  height: 450px;
+}
+
+/* line 1, ../sass/_work.scss */
+.work {
+  background: #efefef;
+  padding-bottom: 80px;
+  z-index: 1;
+}
+/* line 6, ../sass/_work.scss */
+.work .column-half .pre-header {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+/* line 11, ../sass/_work.scss */
+.work .column-half h2 {
+  margin: 0;
+}
+/* line 15, ../sass/_work.scss */
+.work ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+/* line 20, ../sass/_work.scss */
+.work ul li {
+  background: rgba(255, 255, 255, 0.6);
+  border-bottom: 1px solid #c2c2c2;
+  line-height: 34px;
+  margin: 0;
+  padding: 0 10px;
+  width: 100%;
+}
+/* line 28, ../sass/_work.scss */
+.work ul li .joblocation {
+  float: right;
+}
+/* line 33, ../sass/_work.scss */
+.work ul li:last-child {
+  border: none;
+}
+/* line 38, ../sass/_work.scss */
+.work iframe {
+  border: none;
+  width: 100%;
+}
+
+/* line 1, ../sass/_footer.scss */
+footer {
+  background-color: #222222;
+  color: #fff;
+  display: block;
+  float: left;
+  position: relative;
+  padding: 60px 0 100px;
+  width: 100%;
+  z-index: 1;
+}
+/* line 11, ../sass/_footer.scss */
+footer .container {
+  margin-top: 0;
+}
+/* line 15, ../sass/_footer.scss */
+footer a {
+  color: #fff;
+  text-decoration: underline;
+}
+/* line 20, ../sass/_footer.scss */
+footer a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+/* line 25, ../sass/_footer.scss */
+footer ul.social {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+/* line 30, ../sass/_footer.scss */
+footer ul.social li {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 24px 24px;
+  display: inline-block;
+  height: 24px;
+  margin-right: 10px;
+  width: 24px;
+}
+/* line 39, ../sass/_footer.scss */
+footer ul.social li a {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+/* line 46, ../sass/_footer.scss */
+footer ul.social li.facebook {
+  background-image: url("http://content.backcountry.com/promo_upload/corpsite/img/ico-24-facebook-white@2x.png");
+}
+/* line 50, ../sass/_footer.scss */
+footer ul.social li.twitter {
+  background-image: url("http://content.backcountry.com/promo_upload/corpsite/img/ico-24-twitter-white@2x.png");
+}
+/* line 54, ../sass/_footer.scss */
+footer ul.social li.gplus {
+  background-image: url("http://content.backcountry.com/promo_upload/corpsite/img/ico-24-gplus-white@2x.png");
+}
+/* line 58, ../sass/_footer.scss */
+footer ul.social li.instagram {
+  background-image: url("http://content.backcountry.com/promo_upload/corpsite/img/ico-24-instagram-white@2x.png");
+}
+
+/* line 1, ../sass/_bts.scss */
+.bts {
+  background: rgba(34, 34, 34, 0.8);
+  bottom: 0;
+  color: #fff;
+  display: block;
+  left: 0;
+  height: 100%;
+  max-height: 100%;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  text-align: center;
+  z-index: 0;
+}
+/* line 16, ../sass/_bts.scss */
+.bts h2,
+.bts h3 {
+  margin: 0;
+  padding: 0;
+}
+/* line 21, ../sass/_bts.scss */
+.bts .container {
+  margin: 0 auto;
+  position: relative;
+}
+/* line 26, ../sass/_bts.scss */
+.bts iframe {
+  margin: 40px 0;
+}
+
+/* line 31, ../sass/_bts.scss */
+.slideshow-3 {
+  width: 100%;
+}
+/* line 34, ../sass/_bts.scss */
+.slideshow-3 .slides {
+  list-style: none;
+  padding: 0;
+}
+/* line 38, ../sass/_bts.scss */
+.slideshow-3 .slides li {
+  position: relative;
+}
+/* line 41, ../sass/_bts.scss */
+.slideshow-3 .slides li iframe {
+  margin: 0 auto;
+}
+/* line 47, ../sass/_bts.scss */
+.slideshow-3 .flex-control-nav {
+  margin-top: 80px;
+  position: relative;
+}
+/* line 51, ../sass/_bts.scss */
+.slideshow-3 .flex-control-nav li {
+  display: inline-block;
+  margin-left: -72px;
+  position: absolute;
+}
+/* line 56, ../sass/_bts.scss */
+.slideshow-3 .flex-control-nav li a {
+  background-color: transparent;
+  color: #fff;
+  font-size: 32px;
+  opacity: 0;
+  text-transform: uppercase;
+  width: auto;
+}
+/* line 64, ../sass/_bts.scss */
+.slideshow-3 .flex-control-nav li a em {
+  text-transform: none;
+}
+/* line 69, ../sass/_bts.scss */
+.slideshow-3 .flex-control-nav li a.flex-active {
+  opacity: 1;
+}
+/* line 75, ../sass/_bts.scss */
+.slideshow-3 .flex-direction-nav {
+  top: 58%;
+}
+/* line 79, ../sass/_bts.scss */
+.slideshow-3 .flex-direction-nav li .flex-prev,
+.slideshow-3 .flex-direction-nav li .flex-next {
+  background-color: transparent;
+}
+
+/* line 85, ../sass/_bts.scss */
+.bts.active {
+  opacity: 1;
+}
+
+/* line 89, ../sass/_bts.scss */
+.bts-wrapper {
+  display: block;
+}
+
+@media (max-width: 1200px) {
+  /* line 3, ../sass/_media1200.scss */
+  .container {
+    width: 90%;
+  }
+
+  /* line 7, ../sass/_media1200.scss */
+  .intro .container {
+    margin-top: 200px;
+  }
+
+  /* line 11, ../sass/_media1200.scss */
+  .header-0 {
+    font-size: 90px;
+    line-height: 80px;
+  }
+
+  /* line 16, ../sass/_media1200.scss */
+  .why .flex-direction-nav {
+    display: none;
+  }
+
+  /* line 20, ../sass/_media1200.scss */
+  .spacer {
+    display: none;
+  }
+
+  /* line 24, ../sass/_media1200.scss */
+  .where {
+    padding-bottom: 0;
+  }
+}
+@media (max-width: 1000px) {
+  /* line 3, ../sass/_media1000.scss */
+  section {
+    min-height: 0;
+  }
+
+  /* line 7, ../sass/_media1000.scss */
+  .hide-1000 {
+    display: none;
+  }
+
+  /* line 11, ../sass/_media1000.scss */
+  .intro .container {
+    margin-top: 160px;
+    margin-bottom: 80px;
+  }
+
+  /* line 16, ../sass/_media1000.scss */
+  .header-0 {
+    font-size: 90px;
+    line-height: 80px;
+  }
+
+  /* line 21, ../sass/_media1000.scss */
+  .why .flex-direction-nav {
+    display: none;
+  }
+
+  /* line 25, ../sass/_media1000.scss */
+  .header-start ul.nav {
+    display: none;
+  }
+
+  /* line 31, ../sass/_media1000.scss */
+  header .mobile-menu, .header-start .mobile-menu {
+    display: block;
+  }
+
+  /* line 36, ../sass/_media1000.scss */
+  ul.nav {
+    bottom: 100%;
+    position: absolute;
+    left: 0;
+    width: 100%;
+  }
+  /* line 42, ../sass/_media1000.scss */
+  ul.nav li {
+    background: #222;
+    border-bottom: 1px solid #efefef;
+    display: block;
+    text-align: right;
+  }
+  /* line 48, ../sass/_media1000.scss */
+  ul.nav li a {
+    display: block;
+    line-height: 60px;
+    margin: 0;
+    padding-right: 5%;
+    width: 100%;
+  }
+
+  /* line 58, ../sass/_media1000.scss */
+  body > ul.nav {
+    display: block;
+    float: left;
+    margin-top: -244px;
+    position: relative;
+    top: 0;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+    z-index: 9999;
+  }
+
+  /* line 68, ../sass/_media1000.scss */
+  body > ul.nav.open {
+    margin-top: 0;
+  }
+
+  /* line 73, ../sass/_media1000.scss */
+  .where .flex-direction-nav li .flex-next,
+  .where .flex-direction-nav li .flex-prev {
+    background-size: 21px;
+    height: 61px;
+    margin-top: -30px;
+    width: 61px;
+  }
+
+  /* line 80, ../sass/_media1000.scss */
+  .where .flex-direction-nav li .flex-next {
+    right: -30px;
+  }
+
+  /* line 84, ../sass/_media1000.scss */
+  .where .flex-direction-nav li .flex-prev {
+    left: -30px;
+  }
+
+  /* line 88, ../sass/_media1000.scss */
+  .bio-body {
+    padding: 0 40px;
+    width: 70%;
+  }
+
+  /* line 93, ../sass/_media1000.scss */
+  .bio-gradient {
+    width: 70%;
+  }
+}
+@media (max-width: 800px) {
+  /* line 3, ../sass/_media800.scss */
+  body {
+    font-size: 15px;
+  }
+
+  /* line 7, ../sass/_media800.scss */
+  h1, .header-1 {
+    font-size: 32px;
+  }
+
+  /* line 11, ../sass/_media800.scss */
+  h2, header-2 {
+    font-size: 24px;
+  }
+
+  /* line 15, ../sass/_media800.scss */
+  h3, .header-3 {
+    font-size: 18px;
+  }
+
+  /* line 19, ../sass/_media800.scss */
+  h4, .header-4 {
+    font-size: 18px;
+  }
+
+  /* line 23, ../sass/_media800.scss */
+  .container {
+    margin-top: 120px;
+  }
+
+  /* line 27, ../sass/_media800.scss */
+  .intro a.logo {
+    width: 160px;
+  }
+
+  /* line 31, ../sass/_media800.scss */
+  .header-start .mobile-menu {
+    margin-top: 50px;
+  }
+
+  /* line 35, ../sass/_media800.scss */
+  .header-0 {
+    font-size: 70px;
+    line-height: 60px;
+  }
+
+  /* line 40, ../sass/_media800.scss */
+  h1 + p {
+    font-size: 18px;
+    line-height: 24px;
+    width: 340px;
+  }
+
+  /* line 46, ../sass/_media800.scss */
+  .intro .container {
+    margin-top: 130px;
+    margin-bottom: 60px;
+  }
+
+  /* line 51, ../sass/_media800.scss */
+  .intro .trigger {
+    background-size: 18px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    border-radius: 15px;
+    height: 70px;
+    width: 70px;
+  }
+
+  /* line 58, ../sass/_media800.scss */
+  .pre-header {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  /* line 63, ../sass/_media800.scss */
+  .column-third {
+    padding: 20px 10px;
+  }
+
+  /* line 67, ../sass/_media800.scss */
+  .column-third.alpha {
+    padding: 20px 10px 20px 0;
+  }
+
+  /* line 71, ../sass/_media800.scss */
+  .column-third.omega {
+    padding: 20px 0 20px 10px;
+  }
+
+  /* line 76, ../sass/_media800.scss */
+  .where .column-half .pre-header,
+  .where .column-third .pre-header {
+    font-size: 15px;
+  }
+
+  /* line 80, ../sass/_media800.scss */
+  .herd, .bts-spacer, .bts {
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  /* line 3, ../sass/_media600.scss */
+  .container {
+    margin-top: 80px;
+  }
+
+  /* line 7, ../sass/_media600.scss */
+  .show-600 {
+    display: block;
+  }
+
+  /* line 11, ../sass/_media600.scss */
+  .hide-600 {
+    display: none;
+  }
+
+  /* line 15, ../sass/_media600.scss */
+  header {
+    height: 50px;
+  }
+
+  /* line 19, ../sass/_media600.scss */
+  a.goat {
+    margin-top: 12px;
+    width: 24px;
+  }
+
+  /* line 24, ../sass/_media600.scss */
+  header .mobile-menu {
+    margin-top: 9px;
+  }
+
+  /* line 28, ../sass/_media600.scss */
+  .intro {
+    background: url("http://content.backcountry.com/promo_upload/corpsite/img/video-bg.jpg") center center no-repeat;
+    background-size: cover;
+  }
+
+  /* line 33, ../sass/_media600.scss */
+  .intro a.logo {
+    margin-top: 20px;
+    width: 140px;
+  }
+
+  /* line 38, ../sass/_media600.scss */
+  .intro .header-start {
+    height: 70px;
+  }
+
+  /* line 42, ../sass/_media600.scss */
+  .intro .container {
+    margin-top: 100px;
+    margin-bottom: 60px;
+  }
+
+  /* line 47, ../sass/_media600.scss */
+  .header-start .mobile-menu {
+    margin-top: 25px;
+  }
+
+  /* line 51, ../sass/_media600.scss */
+  .intro .trigger {
+    background-size: 12px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    border-radius: 6px;
+    height: 44px;
+    width: 44px;
+  }
+
+  /* line 58, ../sass/_media600.scss */
+  .header-0 {
+    font-size: 42px;
+    line-height: 34px;
+  }
+
+  /* line 63, ../sass/_media600.scss */
+  h1 + p {
+    font-size: 15px;
+    line-height: 18px;
+    margin-top: 10px;
+    width: 100%;
+    max-width: 290px;
+  }
+
+  /* line 71, ../sass/_media600.scss */
+  hr {
+    margin: 40px 0;
+  }
+
+  /* line 75, ../sass/_media600.scss */
+  .why {
+    height: auto;
+  }
+  /* line 78, ../sass/_media600.scss */
+  .why .slides {
+    height: auto;
+  }
+  /* line 81, ../sass/_media600.scss */
+  .why .slides .slide {
+    background: #efefef !important;
+  }
+  /* line 85, ../sass/_media600.scss */
+  .why .slides .container {
+    color: #222;
+    margin: 0 auto;
+    padding-top: 80px;
+    padding-bottom: 0;
+  }
+  /* line 93, ../sass/_media600.scss */
+  .why .slides:before {
+    display: none;
+  }
+
+  /* line 98, ../sass/_media600.scss */
+  .column-full-600 {
+    width: 100%;
+    padding: 0 !important;
+  }
+  /* line 102, ../sass/_media600.scss */
+  .column-full-600 p {
+    margin-top: 0;
+  }
+
+  /* line 109, ../sass/_media600.scss */
+  .where .container {
+    margin-top: 80px;
+  }
+  /* line 113, ../sass/_media600.scss */
+  .where .slideshow-2 {
+    margin-top: 40px;
+  }
+  /* line 118, ../sass/_media600.scss */
+  .where .column-half .pre-header,
+  .where .column-third .pre-header {
+    margin-top: 20px;
+  }
+
+  /* line 123, ../sass/_media600.scss */
+  p.two-column {
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  /* line 130, ../sass/_media600.scss */
+  .who img {
+    margin-top: 20px;
+  }
+  /* line 134, ../sass/_media600.scss */
+  .who h4 {
+    margin-bottom: 0;
+  }
+  /* line 138, ../sass/_media600.scss */
+  .who .flash {
+    margin-top: 0;
+  }
+  /* line 143, ../sass/_media600.scss */
+  .who .column-half-600-alpha,
+  .who .column-half-600-omega {
+    margin: 10px 1% !important;
+    width: 49% !important;
+  }
+  /* line 148, ../sass/_media600.scss */
+  .who .column-half-600-alpha {
+    margin-left: 0 !important;
+  }
+  /* line 152, ../sass/_media600.scss */
+  .who .column-half-600-omega {
+    margin-right: 0 !important;
+  }
+
+  /* line 157, ../sass/_media600.scss */
+  .exec-pic + h3 {
+    margin-top: 5px;
+  }
+
+  /* line 163, ../sass/_media600.scss */
+  .bio-head,
+  .bio-body,
+  .bio-gradient {
+    width: 100%;
+  }
+
+  /* line 167, ../sass/_media600.scss */
+  .bio-gradient {
+    left: 0;
+  }
+
+  /* line 171, ../sass/_media600.scss */
+  footer .column-full-600 {
+    margin-bottom: 40px;
+  }
+}
